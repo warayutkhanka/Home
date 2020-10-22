@@ -95,7 +95,7 @@ github.io
           <!-- Add icons to the links using the .nav-icon class with font-awesome or any other icon font library -->
           <!-- li class="nav-item has-treeview menu-open" -->
 		  <li class="nav-item has-treeview menu-close">
-            <a href="https://warayutkhanka.github.io/home/" class="nav-link">
+            <a href="https://warayutkhanka.github.io/home/" class="nav-link active">
               <i class="fas fa-users"></i>
               <p>
                นายวรายุทธ ขันก๋า
@@ -122,7 +122,7 @@ github.io
                 </a>
               </li>              
               <li class="nav-item">
-                <a href="me.html" class="nav-link">
+                <a href="me.php" class="nav-link active">
                   <i class="fas fa-user"></i>
                   <p>About Me</p>
                 </a>
