@@ -105,7 +105,7 @@ github.io
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="https://warayutkhanka.github.io/home/" class="nav-link">
+                <a href="index.php" class="nav-link">
                   <i class="fa fa-home" aria-hidden="true"></i>
                   <p>Home</p>
                 </a>
@@ -123,19 +123,19 @@ github.io
                 </a>
               </li>                
               <li class="nav-item">
-                <a href="pyramid.html" class="nav-link">
+                <a href="pyramid.php" class="nav-link">
                   <i class="fa fa-code" aria-hidden="true"></i>
                   <p>pyramid</p>
                 </a>
               </li>      
               <li class="nav-item">
-                <a href="subject.html" class="nav-link">
+                <a href="subject.php" class="nav-link">
                   <i class="fas fa-graduation-cap"></i>
                   <p>วิชาที่สนใจ</p>
                 </a>
               </li>  
               <li class="nav-item">
-                <a href="project.html" class="nav-link">
+                <a href="project.php" class="nav-link">
                   <i class="fa fa-suitcase" aria-hidden="true"></i>
                   <p>โปรเจคที่สนใจ</p>
                 </a>

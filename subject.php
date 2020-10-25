@@ -122,19 +122,19 @@ github.io
                 </a>
               </li>              
               <li class="nav-item">
-                <a href="me.html" class="nav-link">
+                <a href="me.php" class="nav-link">
                   <i class="fas fa-user"></i>
                   <p>About Me</p>
                 </a>
               </li>              
               <li class="nav-item">
-                <a href="pyramid.html" class="nav-link">
+                <a href="pyramid.php" class="nav-link">
                   <i class="fa fa-code" aria-hidden="true"></i>
                   <p>Pyramid</p>
                 </a>
               </li>         
               <li class="nav-item">
-                <a href="subject.html" class="nav-link">
+                <a href="subject.php" class="nav-link">
                   <i class="fas fa-graduation-cap"></i>
                   <p>วิชาที่สนใจ</p>
                 </a>
