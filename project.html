@@ -39,43 +39,92 @@ github.io
 - http://thaiall.github.io/www/adminlte/adminlte_github.htm
 --> 
  
-</head>
-<body class="hold-transition sidebar-mini layout-fixed">
-<div class="wrapper">
-
-  <!-- Navbar -->
-  <nav class="main-header navbar navbar-expand navbar-white navbar-light">
-    <!-- Left navbar links -->
-    <ul class="navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
-      </li>
-      <li class="nav-item d-none d-sm-inline-block">
-        <a href="index3.html" class="nav-link">Home</a>
-      </li><li class="nav-item d-none d-sm-inline-block">
-	  <a href="http://www.thaiall.com/adminlte-3.0.4/pages/examples/burin1.htm" class="nav-link">Burin1</a>
-      </li><li class="nav-item d-none d-sm-inline-block">
-	  <a href="http://www.thaiall.com/adminlte/adminlte_fa_font.rar" class="nav-link">font.rar</a>
-      </li><li class="nav-item d-none d-sm-inline-block">
-	  <a href="http://www.thaiall.com/adminlte/adminlte.htm" class="nav-link">htm</a>
-	  </li><li class="nav-item d-none d-sm-inline-block">
-	  <a href="https://thaiall.github.io/www/adminlte/adminlte_github.htm" class="nav-link">github.io</a>
-	  </li>
-    </ul>
-
-    <!-- SEARCH FORM -->
-    <form action="http://www.google.com" class="form-inline ml-3">
-      <div class="input-group input-group-sm">
-        <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
-        <div class="input-group-append">
-          <button class="btn btn-navbar" type="submit">
-            <i class="fas fa-search"></i>
-          </button>
+<style>
+  .dropbtn {
+    background-color: #ffffff;
+    color: black;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  .dropdown:hover .dropbtn {background-color: #ffffff;}
+  </style>
+  
+  </head>
+  <body class="hold-transition sidebar-mini layout-fixed">
+  <div class="wrapper">
+  
+    <!-- Navbar -->
+    <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+      <!-- Left navbar links -->
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+        </li>
+        <div class="dropdown">
+          <button class="dropbtn">Social media</button>
+          <div class="dropdown-content">
+            <a href="https://warayutkhanka.github.io/home/" class="nav-link">home</a>
+            <a href="https://upload.facebook.com/profile.php?id=100004114149387" class="nav-link">facebook</a>
+            <a href="https://www.youtube.com/channel/UCFYt2ritCwm38J1HLGNSfRg?view_as=subscriber" class="nav-link">youtube</a>
+            <a href="https://www.instagram.com/nuengwarayut/" class="nav-link">instagram</a>
+          </div>
         </div>
-      </div>
-    </form>
-  </nav>
-  <!-- /.navbar -->
+        <div class="dropdown">
+          <button class="dropbtn">เกี่ยวกับตัวฉัน</button>
+          <div class="dropdown-content">
+            <a href="me.html" class="nav-link">About Me</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">ผลงานของฉัน</button>
+          <div class="dropdown-content">
+            <a href="pyramid.html" class="nav-link">Pyramid</a>
+            <a href="subject.html" class="nav-link">วิชาที่สนใจ</a>
+            <a href="project.html" class="nav-link">โปรเจคที่สนใจ</a>
+          </div>
+        </div>
+      </ul>
+  
+      <!-- SEARCH FORM -->
+      <form action="http://www.google.com" class="form-inline ml-3">
+        <div class="input-group input-group-sm">
+          <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
+          <div class="input-group-append">
+            <button class="btn btn-navbar" type="submit">
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
+        </div>
+      </form>
+    </nav>
+    <!-- /.navbar -->
 
   <!-- Main Sidebar Container -->
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
@@ -96,9 +145,9 @@ github.io
           <!-- li class="nav-item has-treeview menu-open" -->
 		  <li class="nav-item has-treeview menu-close">
             <a href="https://warayutkhanka.github.io/home/" class="nav-link active">
-                <i class="fas fa-users"></i>
+              <i class="far fa-star"></i>
               <p>
-               นายวรายุทธ ขันก๋า
+                Social media
                 <i class="right fas fa-angle-left"></i>
               </p>
             </a>
@@ -120,47 +169,256 @@ github.io
                   <i class="fab fa-youtube"></i>
                   <p>youtube</p>
                 </a>
-              </li>         
+              </li>     
+              <li class="nav-item">
+                <a href="https://www.instagram.com/nuengwarayut/" class="nav-link">
+                  <i class="fab fa-instagram"></i>
+                  <p>instagram</p>
+                </a>
+              </li>     
+            </ul>
+          </li>    
+          <li class="nav-item has-treeview menu-close">
+            <a href="https://warayutkhanka.github.io/home/" class="nav-link active">
+              <i class="fas fa-users"></i>
+              <p>
+               เกี่ยวกับตัวฉัน
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>     
+            <ul class="nav nav-treeview">
               <li class="nav-item">
                 <a href="me.html" class="nav-link">
                   <i class="fas fa-user"></i>
                   <p>About Me</p>
                 </a>
-              </li>            
+              </li>    
+            </ul>
+          </li>    
+          <li class="nav-item has-treeview menu-close">
+            <a href="https://warayutkhanka.github.io/home/" class="nav-link active">
+              <i class="fas fa-briefcase"></i>
+              <p>
+               ผลงานของฉัน
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>     
+            <ul class="nav nav-treeview">
               <li class="nav-item">
                 <a href="pyramid.html" class="nav-link">
                   <i class="fa fa-code" aria-hidden="true"></i>
-                  <p>pyramid</p>
+                  <p>Pyramid</p>
                 </a>
-              </li> 
-              <li class="nav-item">
-                <a href="subject.html" class="nav-link">
-                  <i class="fas fa-graduation-cap"></i>
-                  <p>วิชาที่สนใจ</p>
+              </li>   
+              <li class="nav-item has-treeview menu-close">
+                <a href="https://warayutkhanka.github.io/home/" class="nav-link active">
+                  <i class="fas fa-users"></i>
+                  <p>
+                   วิชาที่สนใจ
+                    <i class="right fas fa-angle-left"></i>
+                  </p>
                 </a>
-              </li>                            
+                <ul class="nav nav-treeview">
+                  <li class="nav-item has-treeview menu-close">
+                    <a href="https://warayutkhanka.github.io/home/" class="nav-link active">
+                      <i class="fa fa-minus" aria-hidden="true"></i>
+                      <p>
+                        CPSC321_63_1_HCI
+                        <i class="right fas fa-angle-left"></i>
+                      </p>
+                    </a>
+                    <ul class="nav nav-treeview">
+                      <li class="nav-item">
+                        <a href="https://github.com/warayutkhanka/CPSC321_63_1_HCI/blob/gh-pages/%E0%B8%9A%E0%B8%B8%E0%B8%84%E0%B8%84%E0%B8%A5%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%99%E0%B9%88%E0%B8%B2%E0%B8%AA%E0%B8%99%E0%B9%83%E0%B8%88.jpg" class="nav-link">
+                          <i class="fas fa-angle-right"></i>
+                          <p>บุลคลที่น่าสนใจ</p>
+                        </a>
+                      </li>  
+                      <li class="nav-item">
+                        <a href="https://github.com/warayutkhanka/CPSC321_63_1_HCI/blob/gh-pages/ITequipment.jpg" class="nav-link">
+                          <i class="fas fa-angle-right"></i>
+                          <p>ITequipment</p>
+                        </a>
+                      </li>      
+                      <li class="nav-item">
+                        <a href="https://github.com/warayutkhanka/CPSC321_63_1_HCI/blob/gh-pages/intel%20gen10.jpg" class="nav-link">
+                          <i class="fas fa-angle-right"></i>
+                          <p>ntel gen10</p>
+                        </a>
+                      </li>                             
+                    </ul>
+                  </li>         
+                </ul>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item has-treeview menu-close">
+                    <a href="https://warayutkhanka.github.io/home/" class="nav-link active">
+                      <i class="fa fa-minus" aria-hidden="true"></i>
+                      <p>
+                        CPSC462_63_1_JAVA
+                        <i class="right fas fa-angle-left"></i>
+                      </p>
+                    </a>
+                    <ul class="nav nav-treeview">
+                      <li class="nav-item">
+                        <a href="https://github.com/warayutkhanka/CPSC462_63_1_JAVA/tree/master/java_Pyramid" class="nav-link">
+                          <i class="fas fa-angle-right"></i>
+                          <p>pyramid</p>
+                        </a>
+                      </li>  
+                      <li class="nav-item">
+                        <a href="https://github.com/warayutkhanka/CPSC462_63_1_JAVA/tree/master/Java_Max_min" class="nav-link">
+                          <i class="fas fa-angle-right"></i>
+                          <p>max_min</p>
+                        </a>
+                      </li>      
+                      <li class="nav-item">
+                        <a href="https://github.com/warayutkhanka/CPSC462_63_1_JAVA/tree/master/java_bufferedreader" class="nav-link">
+                          <i class="fas fa-angle-right"></i>
+                          <p>bufferedreader</p>
+                        </a>
+                      </li>                             
+                    </ul>
+                  </li>         
+                </ul>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item has-treeview menu-close">
+                    <a href="https://warayutkhanka.github.io/home/" class="nav-link active">
+                      <i class="fa fa-minus" aria-hidden="true"></i>
+                      <p>
+                        CPSC331_63_1_PHP
+                        <i class="right fas fa-angle-left"></i>
+                      </p>
+                    </a>
+                    <ul class="nav nav-treeview">
+                      <li class="nav-item">
+                        <a href="https://github.com/warayutkhanka/CPSC331_63_1_PHP/tree/master/Northwind" class="nav-link">
+                          <i class="fas fa-angle-right"></i>
+                          <p>Northwind</p>
+                        </a>
+                      </li>  
+                      <li class="nav-item">
+                        <a href="https://github.com/warayutkhanka/CPSC331_63_1_PHP/tree/master/PyramidPHP" class="nav-link">
+                          <i class="fas fa-angle-right"></i>
+                          <p>PyramidPHP</p>
+                        </a>
+                      </li>      
+                      <li class="nav-item">
+                        <a href="https://github.com/warayutkhanka/CPSC331_63_1_PHP/tree/master/link3page" class="nav-link">
+                          <i class="fas fa-angle-right"></i>
+                          <p>link3page</p>
+                        </a>
+                      </li>                             
+                    </ul>
+                  </li>         
+                </ul>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item has-treeview menu-close">
+                    <a href="https://warayutkhanka.github.io/home/" class="nav-link active">
+                      <i class="fa fa-minus" aria-hidden="true"></i>
+                      <p>
+                        Programming
+                        <i class="right fas fa-angle-left"></i>
+                      </p>
+                    </a>
+                    <ul class="nav nav-treeview">
+                      <li class="nav-item">
+                        <a href="https://drive.google.com/drive/u/0/folders/15d0mcSq7XbAOrSFGuEqbjfHCYUD5kDu8" class="nav-link">
+                          <i class="fas fa-angle-right"></i>
+                          <p>Do while</p>
+                        </a>
+                      </li>  
+                      <li class="nav-item">
+                        <a href="https://drive.google.com/drive/u/0/folders/1Dz5QoMwGAIY1-NPH1uC3AVvdIpGwKtL0" class="nav-link">
+                          <i class="fas fa-angle-right"></i>
+                          <p>SubProgram_Grade</p>
+                        </a>
+                      </li>      
+                      <li class="nav-item">
+                        <a href="https://drive.google.com/drive/u/0/folders/1QOUt785d9dqlAeslhizsroef-ue85nB3" class="nav-link">
+                          <i class="fas fa-angle-right"></i>
+                          <p>input calculate</p>
+                        </a>
+                      </li>                             
+                    </ul>
+                  </li>         
+                </ul>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item has-treeview menu-close">
+                    <a href="https://warayutkhanka.github.io/home/" class="nav-link active">
+                      <i class="fa fa-minus" aria-hidden="true"></i>
+                      <p>
+                        React Native
+                        <i class="right fas fa-angle-left"></i>
+                      </p>
+                    </a>
+                    <ul class="nav nav-treeview">
+                      <li class="nav-item">
+                        <a href="https://github.com/warayutkhanka/react-native/blob/main/%E0%B8%88%E0%B8%B2%E0%B8%A3%E0%B8%A2%E0%B9%8C%E0%B9%80%E0%B8%8B%E0%B8%9F/CPSC431_Warayut%20Khanka_6108111004_LAB4.pdf" class="nav-link">
+                          <i class="fas fa-angle-right"></i>
+                          <p>calculate area</p>
+                        </a>
+                      </li>  
+                      <li class="nav-item">
+                        <a href="https://github.com/warayutkhanka/react-native/blob/main/%E0%B8%88%E0%B8%B2%E0%B8%A3%E0%B8%A2%E0%B9%8C%E0%B9%80%E0%B8%8B%E0%B8%9F/CPSC431_Warayut%20Khanka_6108111004_LAB5.pdf" class="nav-link">
+                          <i class="fas fa-angle-right"></i>
+                          <p>การส่งค่าข้าม Form</p>
+                        </a>
+                      </li>      
+                      <li class="nav-item">
+                        <a href="https://github.com/warayutkhanka/react-native/blob/main/%E0%B8%88%E0%B8%B2%E0%B8%A3%E0%B8%A2%E0%B9%8C%E0%B9%80%E0%B8%8B%E0%B8%9F/%E0%B8%99%E0%B8%B2%E0%B8%A2%E0%B8%A7%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%B8%E0%B8%97%E0%B8%98%20%E0%B8%82%E0%B8%B1%E0%B8%99%E0%B8%81%E0%B9%8B%E0%B8%B2_Warayut%20Khanka_6108111004_CPSC431.pdf" class="nav-link">
+                          <i class="fas fa-angle-right"></i>
+                          <p>UX / UI</p>
+                        </a>
+                      </li>                             
+                    </ul>
+                  </li>         
+                </ul>
+              </li>
             </ul>
+          </li>      
+              <li class="nav-item has-treeview menu-close">
+                <a href="https://warayutkhanka.github.io/home/" class="nav-link active">
+                  <i class="fas fa-chalkboard"></i>
+                  <p>
+                   โปรเจคที่สนใจ
+                    <i class="right fas fa-angle-left"></i>
+                  </p>
+                </a>     
+                <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="https://www.dpu.ac.th/dpuir/upload/file/it_project/is/carsystem.pdf" class="nav-link">
+                  <i class="fa fa-suitcase" aria-hidden="true"></i>
+                  <p>ระบบลานจอดรถ</p>
+                </a>
+              </li>  
+              <li class="nav-item">
+                <a href="https://www.dpu.ac.th/dpuir/upload/file/it_project/is/cosmetic.pdf" class="nav-link">
+                  <i class="fa fa-suitcase" aria-hidden="true"></i>
+                  <p>ระบบขายออนไลน์</p>
+                </a>
+              </li>  
+              <li class="nav-item">
+                <a href="https://www.dpu.ac.th/dpuir/upload/file/it_project/is/otop.pdf" class="nav-link">
+                  <i class="fa fa-suitcase" aria-hidden="true"></i>
+                  <p>ระบบขายสินค้า OTOP</p>
+                </a>
+              </li>   
+              <li class="nav-item">
+                <a href="https://www.dpu.ac.th/dpuir/upload/file/it_project/is/student.pdf" class="nav-link">
+                  <i class="fa fa-suitcase" aria-hidden="true"></i>
+                  <p>ระบบเทียบโอน</p>
+                </a>
+              </li>   
+              <li class="nav-item">
+                <a href="https://www.dpu.ac.th/dpuir/upload/file/it_project/is/03.pdf" class="nav-link">
+                  <i class="fa fa-suitcase" aria-hidden="true"></i>
+                  <p>ระบบเบเกอรี่ออนไลน์</p>
+                </a>
+              </li>   
+            </ul>
+          </li> 
+          </ul>
           </li>
-          <li class="nav-item">
-            <a href="http://www.thaiall.com/web2" class="nav-link">
-              <i class="nav-icon fas fa-th"></i>
-              <p>
-                /web2
-                <span class="right badge badge-danger">New</span>
-              </p>
-            </a>
-          </li>
-
-          <li class="nav-item">
-            <a href="https://github.com/warayutkhanka/CPSC331_63_1_PHP/blob/master/PyramidPHP/Nueng_01.php" class="nav-link">
-              <i class="nav-icon fas fa-th"></i>
-              <p>
-                /My Git Friends
-                <span class="right badge badge-danger">New</span>
-              </p>
-            </a>
-          </li>		
-		
         </ul>
       </nav>
       <!-- /.sidebar-menu -->
